@@ -307,9 +307,9 @@
                           <InArgument x:TypeArguments="x:Int32">[Convert.ToInt32(Temp.Split(",")(2))]</InArgument>
                         </Assign.Value>
                       </Assign>
-                      <ui:GetVisibleText FormattedText="{x:Null}" WordsInfo="{x:Null}" DisplayName="Get Mobile Phone" sap:VirtualizedContainerService.HintSize="766,106" sap2010:WorkflowViewState.IdRef="GetVisibleText_3">
-                        <ui:GetVisibleText.Target>
-                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="de06c0c77d95b0cede9fb3b43a58b7b2" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;p' idx='8' tag='P' /&gt;">
+                      <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'P'" sap:VirtualizedContainerService.HintSize="766,106" sap2010:WorkflowViewState.IdRef="GetValue_6">
+                        <ui:GetValue.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="9e2b4c5f9b264568ad3ced0e7bca284d" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;p' idx='8' tag='P' /&gt;">
                             <ui:Target.TimeoutMS>
                               <InArgument x:TypeArguments="x:Int32" />
                             </ui:Target.TimeoutMS>
@@ -317,11 +317,11 @@
                               <InArgument x:TypeArguments="ui:WaitForReady" />
                             </ui:Target.WaitForReady>
                           </ui:Target>
-                        </ui:GetVisibleText.Target>
-                        <ui:GetVisibleText.Text>
+                        </ui:GetValue.Target>
+                        <ui:GetValue.Value>
                           <OutArgument x:TypeArguments="ui:GenericValue">[Mobile]</OutArgument>
-                        </ui:GetVisibleText.Text>
-                      </ui:GetVisibleText>
+                        </ui:GetValue.Value>
+                      </ui:GetValue>
                       <Assign DisplayName="MobileParser" sap:VirtualizedContainerService.HintSize="766,60" sap2010:WorkflowViewState.IdRef="Assign_9">
                         <Assign.To>
                           <OutArgument x:TypeArguments="ui:GenericValue">[Mobile]</OutArgument>
@@ -383,7 +383,7 @@
               </Sequence>
               <ui:CloseTab Browser="[CurrBrowser]" DisplayName="Close Tab" sap:VirtualizedContainerService.HintSize="938,22" sap2010:WorkflowViewState.IdRef="CloseTab_1" />
             </Sequence>
-            <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="980,435" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" Workbook="[CurrWorkBook]" WorkbookPath="[Environment.CurrentDirectory+&quot;/Result.xlsx&quot;]">
+            <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="980,435" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" Workbook="[CurrWorkBook]" WorkbookPath="[Environment.CurrentDirectory+&quot;\Result.xlsx&quot;]">
               <ui:ExcelApplicationScope.Body>
                 <ActivityAction x:TypeArguments="ui:WorkbookApplication">
                   <ActivityAction.Argument>
