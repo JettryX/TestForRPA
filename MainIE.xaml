@@ -153,9 +153,9 @@
                           </ui:Target>
                         </ui:Click.Target>
                       </ui:Click>
-                      <ui:GetVisibleText FormattedText="{x:Null}" WordsInfo="{x:Null}" DisplayName="Get Name" sap:VirtualizedContainerService.HintSize="766,106" sap2010:WorkflowViewState.IdRef="GetVisibleText_1">
-                        <ui:GetVisibleText.Target>
-                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="2f682e396b8f992bd2e237efffb0073b" Selector="&lt;webctrl idx='1' tag='B' /&gt;">
+                      <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'B'" sap:VirtualizedContainerService.HintSize="766,106" sap2010:WorkflowViewState.IdRef="GetValue_7">
+                        <ui:GetValue.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="e531f8318cbd2a4066b86df319f4a7ad" Selector="&lt;webctrl idx='1' tag='B' /&gt;">
                             <ui:Target.TimeoutMS>
                               <InArgument x:TypeArguments="x:Int32" />
                             </ui:Target.TimeoutMS>
@@ -163,14 +163,14 @@
                               <InArgument x:TypeArguments="ui:WaitForReady" />
                             </ui:Target.WaitForReady>
                           </ui:Target>
-                        </ui:GetVisibleText.Target>
-                        <ui:GetVisibleText.Text>
+                        </ui:GetValue.Target>
+                        <ui:GetValue.Value>
                           <OutArgument x:TypeArguments="ui:GenericValue">[Name]</OutArgument>
-                        </ui:GetVisibleText.Text>
-                      </ui:GetVisibleText>
-                      <ui:GetVisibleText FormattedText="{x:Null}" WordsInfo="{x:Null}" DisplayName="Get Gender" sap:VirtualizedContainerService.HintSize="766,106" sap2010:WorkflowViewState.IdRef="GetVisibleText_2">
-                        <ui:GetVisibleText.Target>
-                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="a7607396380d72b7e5b942ebbaded439" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;p' idx='2' tag='P' /&gt;">
+                        </ui:GetValue.Value>
+                      </ui:GetValue>
+                      <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'P'" sap:VirtualizedContainerService.HintSize="766,106" sap2010:WorkflowViewState.IdRef="GetValue_8">
+                        <ui:GetValue.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="85011672aadfd8d019fa94964ac24bad" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;p' idx='2' tag='P' /&gt;">
                             <ui:Target.TimeoutMS>
                               <InArgument x:TypeArguments="x:Int32" />
                             </ui:Target.TimeoutMS>
@@ -178,11 +178,11 @@
                               <InArgument x:TypeArguments="ui:WaitForReady" />
                             </ui:Target.WaitForReady>
                           </ui:Target>
-                        </ui:GetVisibleText.Target>
-                        <ui:GetVisibleText.Text>
+                        </ui:GetValue.Target>
+                        <ui:GetValue.Value>
                           <OutArgument x:TypeArguments="ui:GenericValue">[Gender]</OutArgument>
-                        </ui:GetVisibleText.Text>
-                      </ui:GetVisibleText>
+                        </ui:GetValue.Value>
+                      </ui:GetValue>
                       <Assign DisplayName="GenderParser" sap:VirtualizedContainerService.HintSize="766,60" sap2010:WorkflowViewState.IdRef="Assign_1">
                         <Assign.To>
                           <OutArgument x:TypeArguments="ui:GenericValue">[Gender]</OutArgument>
